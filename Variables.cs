@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Variables
 {
@@ -17,7 +17,8 @@ namespace Variables
             char mychar = 'N';
             char mychar2 = '\u006A';
             char mychar3 = '$';
-            
+
+
             Console.WriteLine("your age is:" + age + "...." + age.GetType());
             Console.WriteLine("your age long is:" + ageL + "...." + ageL.GetType());
             Console.WriteLine("your salary is:" + salary);
@@ -28,6 +29,11 @@ namespace Variables
             Console.WriteLine("your mychar is:" + mychar + "...." + mychar.GetType());
             Console.WriteLine("your mychar2 is:" + mychar2 + "....." + mychar2.GetType());
             Console.WriteLine("your mychar3 is:" + mychar3 + "....." + mychar3.GetType() + "\n" + char.IsLetterOrDigit(mychar3));
+
+
+
+
+
 
         }
     }
