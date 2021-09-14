@@ -1,0 +1,26 @@
+﻿<Window x:Class="EmployeesDataBase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeesDataBase"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="DataGridAllEmp" HorizontalAlignment="Left" Height="306" Margin="93,57,0,0" VerticalAlignment="Top" Width="361" SelectionChanged="SelectionEmp" >
+        </DataGrid>
+        <Label Content="Add Eployee" HorizontalAlignment="Left" Margin="562,57,0,0" VerticalAlignment="Top" Width="203"/>
+        <TextBox x:Name="firstNameTxt" HorizontalAlignment="Left" Height="23" Margin="562,93,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" Width="168"  />
+        <TextBox x:Name="lastNameTxt" HorizontalAlignment="Left" Height="23" Margin="562,133,0,0" TextWrapping="Wrap" Text="Last name" VerticalAlignment="Top" Width="168"/>
+        <Label Content="Delete or Update" HorizontalAlignment="Left" Margin="562,214,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="editID" Content="ID" HorizontalAlignment="Left" Margin="562,238,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="editFirstNameTxt" HorizontalAlignment="Left" Height="23" Margin="562,269,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="editLastNameTxt" HorizontalAlignment="Left" Height="23" Margin="562,297,0,0" TextWrapping="Wrap" Text="Last name" VerticalAlignment="Top" Width="168"/>
+        <Button Content="Add Employee" HorizontalAlignment="Left" Margin="562,177,0,0" VerticalAlignment="Top" Width="168" Click="AddEmployeeBtn"/>
+        <Button x:Name="UpdateBtn" Content="Update" HorizontalAlignment="Left" Margin="565,343,0,0" VerticalAlignment="Top" Width="75" Click="UpdateBtnclick"/>
+        <Button x:Name="deleteBtn" Content="Delete" HorizontalAlignment="Left" Margin="654,343,0,0" VerticalAlignment="Top" Width="75" Click="DeleteEmployee"/>
+        <Label Content="Employees Managment CRUD " HorizontalAlignment="Left" Margin="93,19,0,0" VerticalAlignment="Top" Width="361" FontSize="16" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>
